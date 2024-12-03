@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li id="homeArea">HOME</li>
+        <li id="doneArea">DONE</li>
+        <li id="deleteArea">DELETED</li>
+        <li id="monthArea">MONTH</li>
+      </ul>
+    </nav>
+
+    <div class="coverFull">
+      <div class="addExpense">
+        <div class="addEx">
+          <input id="exp" type="text" placeholder="New Expense" />
+          <input id="amount" type="number" placeholder="Amount" />
+          <select id="type" type="" placeholder="New Expense">
+            <option value="Food">Food</option>
+            <option value="Entertainmenat">Entertainment</option>
+          </select>
+          <button id="addButton">Add</button>
+        </div>
+
+        <div id="listExpenses"></div>
+        <div class="totalAm">
+          <h3>Total : </h3>
+          <span id="netAm"></span>
+        </div>
+      </div>
+
+      <div class="doneExpenses">
+        <h4>Done Expenses</h4>
+        <div class="totalAm">
+          <h3>Total : </h3>
+          <span id="netAmDone"></span>
+        </div>
+      </div>
+
+      <div class="deletedExpenses">
+        <h4>Deleted Expenses</h4>
+        <div class="totalAm">
+          <h3>Total : </h3>
+          <span id="netAmDel"></span>
+        </div>
+      </div>
+
+      <div class="monthExpenses">
+        <h4>Month Expenses</h4>
+        <div class="totalAm">
+          <h3>Total : </h3>
+          <span id="netAmMon"></span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="navigate.js"></script>
+  </body>
+</html>
