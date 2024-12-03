@@ -1,0 +1,337 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+  font-family: "Poppins", serif;;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #161b22;
+  position: fixed;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+nav ul li{
+  transition: color 0.3s ease;
+}
+
+nav ul li:hover{
+  color: rgb(10, 255, 10);
+}
+
+.coverFull {
+  background-color: #242538;;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addExpense {
+  background-color:#161B22 ;
+  height: 700px;
+  width: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* display: none; */
+  overflow: auto;
+}
+
+.addExpense::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+
+.addEx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.addExpense input, select, #addButton {
+  height: 40px;
+  width: 100px;
+  border-radius: 15px;
+  border: none;
+}
+
+#type{
+  height: 42px;
+}
+
+#exp{
+  width: 250px;
+  padding-left: 10px;
+}
+
+#amount{
+  padding-left: 10px;
+}
+
+#addButton {
+  height: 42px;
+  width: 60px;
+}
+
+.detail,
+.deletedDetail,
+.doneDetail,
+.monthDetail {
+  background-color: 0d1117;
+  border: 1px solid rgba(255, 255, 255, 0.202);
+  border-radius: 10px;
+  color: white;
+  width: 600px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.detail h3{
+  transition: background-color 0.3s ease;
+  cursor: default;
+  width: 200px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.deletedDetail h3{
+  transition: background-color 0.3s ease;
+  cursor: default;
+  width: 200px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.doneDetail h3{
+  transition: background-color 0.3s ease;
+  cursor: default;
+  width: 200px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.monthDetail h3{
+  transition: background-color 0.3s ease;
+  cursor: default;
+  width: 200px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.detail p{
+  width: 150px;
+  transition: background-color 0.3s ease;
+  cursor: default;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.deletedDetail p{
+  width: 150px;
+  transition: background-color 0.3s ease;
+  cursor: default;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.doneDetail p{
+  width: 150px;
+  transition: background-color 0.3s ease;
+  cursor: default;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.monthDetail p{
+  width: 150px;
+  transition: background-color 0.3s ease;
+  cursor: default;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.detail p:hover{
+  background-color: rgba(255, 255, 255, 0.132);
+}
+.deletedDetail p:hover{
+  background-color: rgba(255, 255, 255, 0.132);
+}
+.doneDetail p:hover{
+  background-color: rgba(255, 255, 255, 0.132);
+}
+.monthDetail p:hover{
+  background-color: rgba(255, 255, 255, 0.132);
+}
+
+.detail p:nth-child(2){
+  width: 50px;
+}
+
+.deletedDetail p:nth-child(2){
+  width: 50px;
+}
+
+.doneDetail p:nth-child(2){
+  width: 50px;
+}
+
+.monthDetail p:nth-child(2){
+  width: 50px;
+}
+
+.detail h3:hover{
+  background-color: rgba(255, 255, 255, 0.132);
+}
+.deletedDetail h3:hover{
+  background-color: rgba(255, 255, 255, 0.132);
+}
+.doneDetail h3:hover{
+  background-color: rgba(255, 255, 255, 0.132);
+}
+.monthDetail h3:hover{
+  background-color: rgba(255, 255, 255, 0.132);
+}
+
+.doneExpenses {
+  background-color: #161B22;
+  height: 700px;
+  width: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  display: none;
+}
+
+.doneExpenses h4{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+.deletedExpenses h4{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+.monthExpenses h4{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+.deletedExpenses {
+  background-color: #161B22;
+  height: 700px;
+  width: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.monthExpenses {
+  background-color: #161B22;
+  height: 700px;
+  width: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.totalAm{
+    height: 50px;
+    width: 600px;
+    background-color: #0d1117;
+    margin-top: 598px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+}
+
+.totalAm h3{
+  margin-left: 40px;
+  color: white;
+}
+
+.totalAm span{
+  color: white;
+}
+
+.deleteButton, .doneButton{
+  border-radius: 10px;
+  border: none;
+  width: 50px;
+  cursor: pointer;
+}
+
+/* media queries */
+
+@media (max-width: 800px) {
+  .addExpense, .doneExpenses, .deletedExpenses, .monthExpenses{
+    width: 400px;
+    height: 700px;
+  }
+
+  .doneExpenses{
+    justify-content: center;
+  }
+
+  .detail, .doneDetail, .deletedDetail, .monthDetail{
+    width: 350px;
+  }
+
+  .doneDetail{
+    align-self: center;
+  }
+
+  .totalAm{
+    width: 400px;
+  }
+  
+  .addEx{
+    width: 350px;
+  }
+
+  #exp{
+    width: 100px;
+  }
+
+  #amount{
+    width: 50px;
+  }
+
+  #type{
+    width: 60px;
+  }
+
+  #addButton{
+    width: 60px;
+  }
+}
